@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.ucsd.cse110.personalbestappteam24">
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.FriendActivity"
+            android:label="@string/title_activity_friend"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".activities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.SignupActivity" />
+        <activity android:name=".activities.ChangeGoalActivity" />
+        <activity android:name=".activities.WalkOrRunActivity" />
+        <activity android:name=".activities.SettingActivity" />
+        <activity android:name=".activities.ReportActivity" />
+        <activity android:name=".activities.HistoryActivity" />
+
+        <service
+            android:name=".storage.LocalStorage"
+            android:label="storage.LocalStorage" />
+
+        <activity android:name=".activities.HeightActivity" />
+        <activity android:name=".activities.GoalAchieveActivity" />
+        <activity android:name=".activities.EncourageActivity" />
+    </application>
+
+</manifest>

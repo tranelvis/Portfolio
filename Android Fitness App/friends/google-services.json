@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "464585489115",
+    "firebase_url": "https://personalbest-40212.firebaseio.com",
+    "project_id": "personalbest-40212",
+    "storage_bucket": "personalbest-40212.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464585489115:android:6051b1fef7f6e86f",
+        "android_client_info": {
+          "package_name": "edu.ucsd.cse110.personalbestappteam24"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464585489115-k1682hths6r3i6e06kcic7q5dumo3k54.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.ucsd.cse110.personalbestappteam24",
+            "certificate_hash": "582961d28ea4044881330467cf5e53b1c2a84937"
+          }
+        },
+        {
+          "client_id": "464585489115-m4o95igjluh6kb75me58o0kop6215v62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGUNbcMnxxcEqjlvF4dTRawzOZ0UTW15Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464585489115-jdd3v5bb7us1df5uj52pktepaus30p79.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

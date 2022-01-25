@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WalkOrRunActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="79dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="Steps"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/stepsTextView"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="79dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="Time"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/timeTextView"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WalkRunHeader" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="143dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="Distance"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/distanceTextView"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="Speed"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/speedTextView"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/WalkRunHeader"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Walk/Run"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/stepsTextView"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WalkRunHeader" />
+
+    <TextView
+        android:id="@+id/speedTextView"
+        android:layout_width="151dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="62dp"
+        android:gravity="center"
+        android:text="0 mph"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/EndWalkButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/distanceTextView" />
+
+    <TextView
+        android:id="@+id/distanceTextView"
+        android:layout_width="149dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:gravity="center"
+        android:text="0 mi"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeTextView" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="163dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:gravity="center"
+        android:text="00:00:00"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stepsTextView" />
+
+    <Button
+        android:id="@+id/EndWalkButton"
+        android:layout_width="231dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/holo_red_light"
+        android:text="end walk/run"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WalkRunHeader"
+        app:layout_constraintVertical_bias="0.888" />
+
+</android.support.constraint.ConstraintLayout>
