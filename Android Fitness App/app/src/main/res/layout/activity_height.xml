@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.HeightActivity">
+
+    <Button
+        android:id="@+id/submitHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:layout_marginBottom="152dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/footDropDown"
+        android:layout_width="96dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="244dp"
+        android:entries="@array/heightFootOptions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterHeightPrompt" />
+
+    <Spinner
+        android:id="@+id/inchDropDown"
+        android:layout_width="98dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginRight="87dp"
+        android:layout_marginBottom="244dp"
+        android:entries="@array/heightInchOptions"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/footDropDown"
+        app:layout_constraintTop_toBottomOf="@+id/enterHeightPrompt" />
+
+    <TextView
+        android:id="@+id/enterHeightPrompt"
+        android:layout_width="288dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginBottom="300dp"
+        android:text="Enter your height below."
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="56dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="254dp"
+        android:text="ft."
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/inchDropDown"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/footDropDown"
+        app:layout_constraintTop_toBottomOf="@+id/enterHeightPrompt" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="56dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="254dp"
+        android:text="in."
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toEndOf="@+id/inchDropDown"
+        app:layout_constraintTop_toBottomOf="@+id/enterHeightPrompt" />
+
+</android.support.constraint.ConstraintLayout>
