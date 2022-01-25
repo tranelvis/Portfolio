@@ -166,7 +166,7 @@ After opening `Moneta.ipynb`, select the first cell and press `SHIFT + ENTER`, o
 
 You should see input boxes appear like below:
 
-![Start Cell](../assets/StartCell.png?raw=true)
+![Start Cell](./assets/StartCell.png?raw=true)
 
 Once you have inputted your desired values, click the `Generate Trace` button to generate the trace. Trace files can be found in the `~/work/moneta/.output` directory.
 
@@ -213,7 +213,7 @@ Now to visualize those accesses for your program. We need to run the pintool and
 
 After opening `Moneta.ipynb`, select the first cell and press `SHIFT + ENTER`, or click the `Run` button on the top menu bar.  
 If the trace loaded successfully, you should see input boxes appear like below:
-![Start Cell](../assets/StartCell.png?raw=true)
+![Start Cell](./assets/StartCell.png?raw=true)
 
 **Inputs:**  
 - `Cache Lines`: The number of lines in our fully-associative cache model (4096)  
@@ -224,9 +224,9 @@ If the trace loaded successfully, you should see input boxes appear like below:
 - `Name for Output`: Name your trace as it will appear on the right  
 
 Let's go with the defaults for now and enter the path to your executable. Name it `hello_world`. Then, hit `Generate Trace`  
-![Generate Trace](../assets/Generate.png?raw=true)
+![Generate Trace](./assets/Generate.png?raw=true)
 On success, `hello_world` shows up in the trace list. Select it and hit `Load Trace`  
-![Load Trace](../assets/Load.png?raw=true)
+![Load Trace](./assets/Load.png?raw=true)
 
 ### Moneta Plot Features
 
@@ -241,7 +241,7 @@ The plot point colors show the general memory access pattern in that region. Sin
 The plot displays a cache line on the left side of the plot (the lime green line by default). The cache line size is based off the cache lines and block size inputs and is used as a scale bar to visualize how the plotted accesses fit in the cache. Right now, it's larger than the address range of the array!
 
 ### Toolbar
-<img src="../assets/Toolbar.png" alt="Toolbar" width="400px">  
+<img src="./assets/Toolbar.png" alt="Toolbar" width="400px">  
 At init, we start off with being able to pan and zoom around the plot ("hand"). The middle button enables zoom to selection where dragging and selecting a region moves plot to any points in that region with a hard limit of 128 on each dimension. The right button ("mouse") activates click zoom, which zooms in by 10x.
 
 The refresh button resets plot to limits on load. Undo/redo are triggered by any panning and zooming with a history of 50 udpates.
@@ -250,15 +250,15 @@ The x and y checkboxes enable panning and zooming in their respective dimensions
 
 ### Legend
 Another way to explore your program is checking the type of each access.  
-<img src="../assets/Accesses.png" alt="Legend Accesses" width="400px">  
+<img src="./assets/Accesses.png" alt="Legend Accesses" width="400px">  
 This panel allows you to turn on/off any combination of reads and writes against hits, capacity misses, and compulsory misses.  
 Each access in the loop has a read hit (dark blue) and write hit (light blue).  The color picker next to each dark blue checkbox allows you to configure the colors. You can even modify the cache specifier's color plus reset all the colors to their defaults.
 
-<img src="../assets/Tags.png" alt="Legend Tags" width="400px">  
+<img src="./assets/Tags.png" alt="Legend Tags" width="400px">  
 In this panel, we see the tags we added to our program just like we expected! Try (de)selecting each of the tags and see if they update the expected part of the trace.
 
 Each tag comes with a button which on hover shows detailed information of the tag including accesses and hit rate. You can click on the button to zoom in to just the tag you want to see. Zoom into `loop_array0` to see the accesses from all 10 iterations of the loop:
-![Zoom to Tag](../assets/Zoomed.png?raw=true)
+![Zoom to Tag](./assets/Zoomed.png?raw=true)
 
 Lastly, we have the click zoom and stats panels. The click zoom panel shows the result of using the click zoom toggle. The stats panel shows the hit rates of the overall plot and the current view.
 
