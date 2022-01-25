@@ -25,7 +25,7 @@ Generate and visualize billions of memory accesses with this project built on PI
 ### Building the Image
 First clone the repository.
 ```
-git clone https://github.com/NVSL/CSE141pp-Tool-Moneta
+git clone (directory name)
 cd CSE141pp-Tool-Moneta
 ```
 
