@@ -148,7 +148,7 @@ Qinghui (Luna) Xia -- **Full Stack Developer**: focusing on the client side and 
 Yushan Liu -- **Game Designer** and **Front-end Developer** focusing on BabylonJS GUI. Yushan is a 1st year MS Computer Science student. \
 Peizhen Wu -- **Full Stack Developer**: focusing on the server and Babylon.js GUI. Peizhen is a Computer Science Master student. \
 Yiran Chen -- **Full Stack Developer**: focusing on graphics (models and animations). Yiran is a 1st year MS Computer Science student. \
-Elvis Tran -- **Website Developer**: focusing on website UI. Elvis is a graduating BS Computer Engineering student.
+Elvis Tran -- **Front-end Developer**: focusing on website and BabylonJS G/UI. Elvis is a graduating BS Computer Engineering student.
 
 ### Help and Contacts
 If you have any questions regarding AR Meow Meow, please feel free to email us. Our email address is cse218.team.m@gmail.com
